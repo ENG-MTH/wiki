@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    <form action="'url 'wiki:create-entry'"method="post">
+    <form action="{% url 'wiki:create_entry'%}"method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        {{ form }}
-        <button type="submit" value="Submit"></button>
+        {{ form.as_p}}
+
+        <button type="submit" ">sumbit</button>
     </form>
 
 
